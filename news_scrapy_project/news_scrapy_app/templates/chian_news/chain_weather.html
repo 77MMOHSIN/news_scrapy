@@ -1,0 +1,59 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<title>Worlds</title>
+<div class="container ">
+    <div class="row ">
+    <div class="col-md-12  col-sm-6">
+    <div class="card py-3 px-3   text-dark">
+        {% comment %} <img src="{% static 'images/pakistan.png' %}" alt="" class="card-img-top">  {% endcomment %}
+        <div class="card-body">
+            <h4 class="card-title  bg bg-primary text-center text-white fw-bold">Current Weather</h4>
+<div class="d-flex">
+    <a href="https://search.yahoo.com/search;_ylt=Awr48o1XsAJm1CgA.ipXNyoA;_ylc=X1MDMjc2NjY3OQRfcgMyBGZyA21jYWZlZQRmcjIDc2ItdG9wBGdwcmlkA0lPcUhBMGRFU3JhQnB6Lm9ienNZY0EEbl9yc2x0AzAEbl9zdWdnAzAEb3JpZ2luA3NlYXJjaC55YWhvby5jb20EcG9zAzAEcHFzdHIDBHBxc3RybAMwBHFzdHJsAzIyBHF1ZXJ5A1NoYW5naGFpJTIwdG9kYXklMjB3ZWF0aGVyBHRfc3RtcAMxNzExNDUyNjU2?p=Shanghai+today+weather&fr=mcafee&type=E210US91215G0&fr2=sb-top&iscqry=" id="a">
+        <button class="btn btn-primary text-white fw-bold">Shanghai:  <span class="badge  bg-light text-dark card-text">{{weather1}}</span></button>
+    </a>
+            
+            &nbsp;
+            &nbsp;
+             <a href="https://search.yahoo.com/search;_ylt=Awr49WpWsQJm.RICGvZXNyoA;_ylc=X1MDMjc2NjY3OQRfcgMyBGZyA21jYWZlZQRmcjIDc2ItdG9wBGdwcmlkAzNrOUsuMnNxUzlTREx1Y2JmSnJ6REEEbl9yc2x0AzAEbl9zdWdnAzAEb3JpZ2luA3NlYXJjaC55YWhvby5jb20EcG9zAzAEcHFzdHIDBHBxc3RybAMwBHFzdHJsAzIzBHF1ZXJ5A0d1YW5nemhvdSUyMHRvZGF5JTIwd2VhdGhlcgR0X3N0bXADMTcxMTQ1MzAwMQ--?p=Guangzhou+today+weather&fr=mcafee&type=E210US91215G0&fr2=sb-top&iscqry=" id="a">
+                <button class="btn btn-primary text-white fw-bold">Guangzhou: <span class="badge  bg-light text-dark card-text">{{weather2}}</span></button>
+                &nbsp;
+                &nbsp;
+            
+
+    </a>
+    <a href="https://search.yahoo.com/search;_ylt=AwrOoxTKswJmrTUCgj5XNyoA;_ylc=X1MDMjc2NjY3OQRfcgMyBGZyA21jYWZlZQRmcjIDc2ItdG9wBGdwcmlkA2Nqa2l4eXBBUlB5OE9CNHAuSmtUNUEEbl9yc2x0AzAEbl9zdWdnAzEwBG9yaWdpbgNzZWFyY2gueWFob28uY29tBHBvcwMwBHBxc3RyAwRwcXN0cmwDMARxc3RybAMyMQRxdWVyeQNUaWFuamluJTIwdG9kYXklMjB3ZWF0aGVyBHRfc3RtcAMxNzExNDUzMzI1?p=Tianjin+today+weather&fr=mcafee&type=E210US91215G0&fr2=sb-top&iscqry=" id="a">
+        <button class="btn btn-primary text-white fw-bold">Tianjin: <span class="badge  bg-light text-dark card-text">{{weather3}}</span></button>
+    
+
+</a>
+&nbsp;
+&nbsp;
+<a href="https://search.yahoo.com/search?fr=mcafee&type=E210US91215G0&p=Beijing+today+weather" id="a">
+    <button class="btn btn-primary text-white fw-bold">Beijing: <span class="badge  bg-light text-dark card-text">{{weather}}</span></button>
+        
+</a>           
+                &nbsp;
+            &nbsp;
+            <a href="https://search.yahoo.com/search;_ylt=AwrO_y3ptAJmLC0CwtpXNyoA;_ylc=X1MDMjc2NjY3OQRfcgMyBGZyA21jYWZlZQRmcjIDc2ItdG9wBGdwcmlkA1dNcFFPLkNWU251R2VTNEtVdjdnN0EEbl9yc2x0AzAEbl9zdWdnAzEwBG9yaWdpbgNzZWFyY2gueWFob28uY29tBHBvcwMwBHBxc3RyAwRwcXN0cmwDMARxc3RybAMyMwRxdWVyeQNDaG9uZ3FpbmclMjB0b2RheSUyMHdlYXRoZXIEdF9zdG1wAzE3MTE0NTM2ODM-?p=Chongqing+today+weather&fr=mcafee&type=E210US91215G0&fr2=sb-top&iscqry=" id="a">
+                <button class="btn btn-primary text-white fw-bold">Chongqing: <span class="badge  bg-light text-dark card-text">{{weather4}}</span></button>
+                    
+            </a>           
+                    
+            
+                &nbsp;
+            &nbsp;
+        
+                 
+        </div>
+        
+        </div>
+        <div class='text-center'>
+            <a href="{% url 'base' %}"><button type="submit " class='btn btn-primary fw-bold'>Go back to home</button></a>   
+        </div>               
+</div>
+
+</div>
+</div>

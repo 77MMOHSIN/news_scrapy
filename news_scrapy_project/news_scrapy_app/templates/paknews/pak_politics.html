@@ -1,0 +1,144 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <title>Worlds</title>
+</head>
+<body>
+    
+    <h1></h1>
+    <div class="container ">
+        <div class="row ">
+        <div class="col-md-12  col-sm-6">
+        <div class="card py-3 px-3   text-dark">
+            {% comment %} <img src="{% static 'images/pakistan.png' %}" alt="" class="card-img-top">  {% endcomment %}
+            <div class="card-body">
+                
+                <h4 class="card-title  bg bg-primary text-center text-white fw-bold">Pakistan Politics</h4>
+                <div class='d-flex'>
+                    <div class="text-overlay1"> 
+                        <div class="container1 ">
+                          <div class="cube1">
+                            <div class="face1 right1" id="line1">News</div>
+                              <div class="face1 front1" id="line1">News</div>
+                              <div class="face1 back1" id="line1">News</div>
+                              <div class="face1 top1" id="line1">News</div>
+                              <div class="face1 bottom1" id="line1">News</div>
+                              <div class="face1 left1"id="line1">News</div>
+                             
+                          </div>
+                          
+                      </div>
+                      
+                       <div class='aggr1'>
+                      <span class=' p-3 fw-bold'>ARY</span>
+                    </div>
+                    </div>
+                    
+                      <h6 class='card-text fw-bold mr-5 px-5 mt-3'><a href="https://arynews.tv/" id="a">{{news}}</a></h6>   
+                    
+                      </div>
+                    
+                    
+                      <br><br>
+                    <hr>
+                    
+                  
+                    <div class='d-flex'>
+                      <div class="text-overlay1"> 
+                          <div class="container1 ">
+                            <div class="cube1">
+                              <div class="face2 right1" id="line1">News</div>
+                                <div class="face2 front1" id="line1">News</div>
+                                <div class="face2 back1" id="line1">News</div>
+                                <div class="face2 top1" id="line1">News</div>
+                                <div class="face2 bottom1" id="line1">News</div>
+                                <div class="face2 left1"id="line1">News</div>
+                               
+                            </div>
+                            
+                        </div>
+                        
+                         <div class='aggr2'>
+                        <span class=' p-3 fw-bold'>Geo</span>
+                      </div>
+                      </div>
+                      
+                        <h6 class='card-text fw-bold mr-5 px-5 mt-3'><a href="https://www.geo.tv/category/pakistan" id="a">{{politics}}</a></h6>   
+                      
+                        </div>
+                        <br><br><hr>
+                        <div class='d-flex'>
+                          <div class="text-overlay1"> 
+                              <div class="container1 ">
+                                <div class="cube1">
+                                  <div class="facesa right1" id="line1">News</div>
+                                    <div class="facesa front1" id="line1">News</div>
+                                    <div class="facesa back1" id="line1">News</div>
+                                    <div class="facesa top1" id="line1">News</div>
+                                    <div class="facesa bottom1" id="line1">News</div>
+                                    <div class="facesa left1"id="line1">News</div>
+                                   
+                                </div>
+                                
+                            </div>
+                            
+                             <div class='aggr3'>
+                            <span class=' p-1 fw-bold'>Samaa tv</span>
+                          </div>
+                          </div>
+                          
+                            <h6 class='card-text fw-bold mr-5 px-5 mt-3'><a href="https://www.samaa.tv/latest-news" id="a">{{politics3}}</a></h6>   
+                          
+                            </div>
+                    <br>
+                      <br>
+                    <hr>
+                    <br>
+                    <div class='d-flex'>
+                      <div class="text-overlay1"> 
+                          <div class="container1 ">
+                            <div class="cube1">
+                              <div class="facesa1 right1" id="line1">News</div>
+                                <div class="facesa1 front1" id="line1">News</div>
+                                <div class="facesa1 back1" id="line1">News</div>
+                                <div class="facesa1 top1" id="line1">News</div>
+                                <div class="facesa1 bottom1" id="line1">News</div>
+                                <div class="facesa1 left1"id="line1">News</div>
+                               
+                            </div>
+                            
+                        </div>
+                        
+                         <div class='aggr4'>
+                        <span class=' p-1 fw-bold'>Dunya</span>
+                      </div>
+                      <br><br>
+                      </div>
+                      
+                        <h6 class='card-text fw-bold mr-5 px-5 mt-3'><a href="https://dunyanews.tv/livehd/" id="a">{{politics4}}</a></h6>   
+                      
+                        </div>
+                  <br>
+                    <br>
+                  </div>
+            </div>
+            <br>
+          </div>
+           
+          <div class='text-center'>
+            <a href="{% url 'base' %}"><button type="submit " class='btn btn-primary fw-bold'>Go back to home</button></a>   
+        </div>
+          </div>               
+    </div>
+
+    
+    
+
+</body>
+</html>

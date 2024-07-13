@@ -1,0 +1,68 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+ 
+<div class="container ">
+    <div class="card py-3 px-3   text-dark">
+    <div class="row ">
+       
+    <div class="col-md-12  col-sm-6">
+    
+
+        <div class="card-body">
+            <h4 class="card-title  bg bg-primary text-center text-white fw-bold">Current Weather</h4>
+            <div class="d-flex">
+            <div>
+                <h6 class='card-text fw-bold mr-5 px-3 mt-3'><a href='https://search.yahoo.com/search?fr=mcafee&type=E210US91215G0&p=Auckland+today+weather' id="a"><button class="btn btn-primary text-white fw-bold">Auckland: <span class="badge  bg-light text-dark card-text">{{nzw}}</span></button>
+                </a></h6>
+            </div>
+
+            <div>
+                <h6 class='card-text fw-bold mr-5 px-3 mt-3'><a href='https://search.yahoo.com/search;_ylt=Awr99rweXQZmlQQA2llXNyoA;_ylc=X1MDMjc2NjY3OQRfcgMyBGZyA21jYWZlZQRmcjIDc2ItdG9wBGdwcmlkA3dMRlJyMUVBUld1SUZMeEEzNmpCVEEEbl9yc2x0AzAEbl9zdWdnAzAEb3JpZ2luA3NlYXJjaC55YWhvby5jb20EcG9zAzAEcHFzdHIDBHBxc3RybAMwBHFzdHJsAzI0BHF1ZXJ5A1dlbGxpbmd0b24lMjB0b2RheSUyMHdlYXRoZXIEdF9zdG1wAzE3MTE2OTM3NzY-?p=Wellington+today+weather&fr=mcafee&type=E210US91215G0&fr2=sb-top&iscqry=' id="a">       <button class="btn btn-primary text-white fw-bold">Wellington: <span class="badge  bg-light text-dark card-text">{{nzw1}}</span></button>
+         
+                </a></h6>
+            </div>
+
+            <div>
+                <h6 class='card-text fw-bold mr-5 px-3 mt-3'><a href='https://search.yahoo.com/search;_ylt=AwrjZEY1XwZm5gcBWphXNyoA;_ylc=X1MDMjc2NjY3OQRfcgMyBGZyA21jYWZlZQRmcjIDc2ItdG9wBGdwcmlkA2pPTEw0TGliUVRLdGRvdjNTZnRIRkEEbl9yc2x0AzAEbl9zdWdnAzAEb3JpZ2luA3NlYXJjaC55YWhvby5jb20EcG9zAzAEcHFzdHIDBHBxc3RybAMwBHFzdHJsAzI2BHF1ZXJ5A0NocmlzdGNodXJjaCUyMHRvZGF5JTIwd2VhdGhlcgR0X3N0bXADMTcxMTY5NDAwMA--?p=Christchurch+today+weather&fr=mcafee&type=E210US91215G0&fr2=sb-top&iscqry=' id="a">       <button class="btn btn-primary text-white fw-bold">Christchurch: <span class="badge  bg-light text-dark card-text">{{nzw2}}</span></button>
+                
+                </a></h6>
+            </div>
+            <div>
+                <h6 class='card-text fw-bold mr-5 px-3 mt-3'><a href='https://search.yahoo.com/search;_ylt=Awr99rwVYAZmfn8BClJXNyoA;_ylc=X1MDMjc2NjY3OQRfcgMyBGZyA21jYWZlZQRmcjIDc2ItdG9wBGdwcmlkA1E5UXhhX050VEhlUUxHbUdiVEp0RkEEbl9yc2x0AzAEbl9zdWdnAzAEb3JpZ2luA3NlYXJjaC55YWhvby5jb20EcG9zAzAEcHFzdHIDBHBxc3RybAMwBHFzdHJsAzIyBHF1ZXJ5A0hhbWlsdG9uJTIwdG9kYXklMjB3ZWF0aGVyBHRfc3RtcAMxNzExNjk0MjI3?p=Hamilton+today+weather&fr=mcafee&type=E210US91215G0&fr2=sb-top&iscqry=' id="a">                    <button class="btn btn-primary text-white fw-bold">Hamilton: <span class="badge  bg-light text-dark card-text">{{nzw3}}</span></button>
+   
+                
+                </a></h6>
+            </div>
+            <div>
+                <h6 class='card-text fw-bold mr-5 px-3 mt-3'><a href='https://search.yahoo.com/search;_ylt=AwrOsnj4YAZmQEoAAgBXNyoA;_ylc=X1MDMjc2NjY3OQRfcgMyBGZyA21jYWZlZQRmcjIDc2ItdG9wBGdwcmlkA2RnV1ZaSE5CU09HcHJDMDI1WFY5NUEEbl9yc2x0AzAEbl9zdWdnAzAEb3JpZ2luA3NlYXJjaC55YWhvby5jb20EcG9zAzAEcHFzdHIDBHBxc3RybAMwBHFzdHJsAzIyBHF1ZXJ5A1RhdXJhbmdhJTIwdG9kYXklMjB3ZWF0aGVyBHRfc3RtcAMxNzExNjk0NDA0?p=Tauranga+today+weather&fr=mcafee&type=E210US91215G0&fr2=sb-top&iscqry=' id="a">                                <button class="btn btn-primary text-white fw-bold">Tauranga: <span class="badge  bg-light text-dark card-text">{{nzw4}}</span></button>
+    
+   
+                
+                </a></h6>
+            </div>
+            <div>
+                <h6 class='card-text fw-bold mr-5 px-3 mt-3'><a href='https://search.yahoo.com/search;_ylt=AwrO_.apYQZmuKcAipBXNyoA;_ylc=X1MDMjc2NjY3OQRfcgMyBGZyA21jYWZlZQRmcjIDc2ItdG9wBGdwcmlkA1ZiMlpFTzJwU0NLU2o3ZzRaMlpkeUEEbl9yc2x0AzAEbl9zdWdnAzAEb3JpZ2luA3NlYXJjaC55YWhvby5jb20EcG9zAzAEcHFzdHIDBHBxc3RybAMwBHFzdHJsAzIxBHF1ZXJ5A0R1bmVkaW4lMjB0b2RheSUyMHdlYXRoZXIEdF9zdG1wAzE3MTE2OTQ2NTI-?p=Dunedin+today+weather&fr=mcafee&type=E210US91215G0&fr2=sb-top&iscqry=' id="a">                                        <button class="btn btn-primary text-white fw-bold">Dunedin: <span class="badge  bg-light text-dark card-text">{{nzw5}}</span></button>
+    
+    
+   
+                
+                </a></h6>
+            </div>
+    
+    
+        </div>
+            
+        </div>
+       
+       
+</div>
+
+</div> 
+
+<div class='text-center'>
+    <a href="{% url 'base' %}"><button type="submit " class='btn btn-primary fw-bold'>Go back to home</button></a>   
+</div>
+</div>
+</div>
+

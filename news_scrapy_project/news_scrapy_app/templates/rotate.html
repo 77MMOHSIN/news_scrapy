@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rotating Cube</title>
+<style>
+    .container {
+        perspective: 500px;
+        width: 100px;
+        height: 100px;
+        margin: 30px;
+    
+    }
+
+    .cube {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transform-style: preserve-3d;
+        transform-origin: center;
+        animation: rotateCube 5s linear infinite; /* Adjust the duration as needed */
+    }
+
+    .face {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-color: #3498db;
+        
+        border: 1px solid #3498db;
+        box-sizing: border-box;
+        opacity: 0.8;
+    }
+
+    .front {
+        transform: translateZ(50px);
+    }
+
+    .back {
+        transform: rotateY(180deg) translateZ(50px);
+    }
+
+    .top {
+        transform: rotateX(90deg) translateZ(50px);
+    }
+
+    .bottom {
+        transform: rotateX(-90deg) translateZ(50px);
+    }
+
+    .left {
+        transform: rotateY(-90deg) translateZ(50px);
+    }
+
+    .right {
+        transform: rotateY(90deg) translateZ(50px);
+    }
+
+    @keyframes rotateCube {
+        from {
+            transform: rotateY(0deg);
+        }
+        to {
+            transform: rotateY(360deg);
+        }
+    }
+    #line{
+        line-height: 100px;
+        text-align: center;
+        color: #FFFBEB;
+        font-size: 40px;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="cube">
+        <div class="face front" id="line">News</div>
+        <div class="face back" id="line">News</div>
+        <div class="face top" id="line">News</div>
+        <div class="face bottom" id="line">News</div>
+        <div class="face left"id="line">News</div>
+        <div class="face right" id="line">News</div>
+    </div>
+</div>
+
+</body>
+</html>

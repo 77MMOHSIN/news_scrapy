@@ -1,0 +1,530 @@
+
+.images2{
+    height: 253px;
+}
+.highet{
+    top:100px; 
+    border: 2px solid red;
+}
+.imagehight{
+    justify-content: 1;
+    
+}
+.top{
+    bottom: 300px;
+    top: 120px;
+}
+#gh{
+    height: 550px;
+}
+.content {
+    margin-bottom: 100px;
+    padding: 20px;
+}
+.text-overlay {
+    position:absolute;
+    bottom: 10px;
+    left: 70px;
+    /* color: white; */
+    /* font-size: 18px; */
+    font-weight: bold;
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); Optional text shadow */
+}
+.container {
+    perspective: 500px;
+    width: 100px;
+    height: 100px;
+    margin: 30px;
+    
+
+}
+
+.cube {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    animation: rotateCube 5s linear infinite; /* Adjust the duration as needed */
+}
+
+.face {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    
+    border: 1px solid #3498db;
+    box-sizing: border-box;
+    opacity: 0.8;
+}
+
+.front {
+    transform: translateZ(50px);
+}
+
+.back {
+    transform: rotateY(180deg) translateZ(50px);
+}
+
+.top {
+    transform: rotateX(90deg) translateZ(50px);
+}
+
+.bottom {
+    transform: rotateX(-90deg) translateZ(50px);
+}
+
+.left {
+    transform: rotateY(-90deg) translateZ(50px);
+}
+
+.right {
+    transform: rotateY(90deg) translateZ(50px);
+}
+
+@keyframes rotateCube {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+#line{
+    line-height: 100px;
+    text-align: center;
+    color: #FFFBEB;
+    font-size: 35px;
+}
+.aggre{
+    
+    border-radius: 5px;
+    color: white;
+    background-color:#0C359E;
+    font-size: larger;
+    height: 30px;
+    text-align: center;
+    
+}
+.rotate-vert-center {
+	-webkit-animation: rotate-vert-center 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) 2 both;
+	        animation: rotate-vert-center 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) 3 both;
+}
+ @-webkit-keyframes rotate-vert-center {
+    0% {
+      -webkit-transform: rotateY(0);
+              transform: rotateY(0);
+    }
+    100% {
+      -webkit-transform: rotateY(360deg);
+              transform: rotateY(360deg);
+    }
+  }
+  @keyframes rotate-vert-center {
+    0% {
+      -webkit-transform: rotateY(0);
+              transform: rotateY(0);
+    }
+    100% {
+      -webkit-transform: rotateY(360deg);
+              transform: rotateY(360deg);
+    }
+  }
+  
+  
+li{
+    list-style-type: none;
+}
+#height{
+    height: 280px;
+    
+}
+#height1{
+    height: 280px;
+    
+}
+
+.dot {
+    display: flex;
+
+    border: 2px solid #e9e0d9;
+    margin-top: 15px;
+    width: 10px; /* Adjust size as needed */
+    height: 10px; /* Adjust size as needed */
+    background-color: #ff5733; /* Color of the dot */
+    border-radius: 50%; /* Ensures the dot is circular */
+    animation: pulse 1s infinite alternate; /* Animation properties */
+  }
+
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.2);
+    }
+  }
+a{
+    text-decoration: none;
+}
+.zoom {
+    cursor: pointer;
+    margin-top: 20px;
+  
+    transition: transform .5s; /* Animation */
+
+        }
+
+.zoom:hover {
+    background-color:#FA7070;
+    color:#FEFDED;
+
+    transform: scale(1.5); /* 150% zoom - Note: if the zoom is too large, it will go outside of the viewport */
+}  
+#a {
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+  }
+#a:hover{
+    color: #E72929;
+    background-color:#FBF8DD ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}  
+#a:active{
+    color: #000;
+}
+.text-overlay1 {
+      position:absolute;
+      margin-top: 0px;
+      left: 2px;
+      
+      /* color: white; */
+      /* font-size: 18px; */
+      /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); Optional text shadow */
+  }
+  .container1 {
+      perspective: 500px;
+      width: 50px;
+      height: 50px;
+      margin: 10px;
+      
+  
+  }
+  
+  .cube1 {
+      
+      position: relative;
+      transform-style: preserve-3d;
+      transform-origin: center;
+      animation: rotateCube 5s linear infinite; /* Adjust the duration as needed */
+  }
+  .face1 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color:#FDA357;
+    
+    border: 1px solid #FDA357;
+    box-sizing: border-box;
+    
+    
+}
+.face2 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color:#08519F;
+    
+    border: 1px solid#08519F;
+    box-sizing: border-box;
+    
+    
+}
+.facesa {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color:#01011E;
+    
+    border: 1px solid#01011E;
+    box-sizing: border-box;
+    
+    
+}
+.facesa1 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color:rgb(25, 25, 219);
+    
+    border: 1px solid rgb(25, 25, 219);
+    box-sizing: border-box;
+    
+    
+}
+.aggr3{
+    background-color:#01011E;
+    color:white;
+    
+    height: -10px;
+
+}
+.aggr4{
+    background-color:#41C9E2;
+    color:white;
+    
+    height: -10px;
+
+}
+
+.aggr2{
+    background-color:#F48220;
+    color:white;
+    
+    height: -10px;
+
+}
+
+
+.front1 {
+    transform: translateZ(25px);
+}
+
+.back1 {
+    transform: rotateY(180deg) translateZ(25px);
+}
+
+.top1 {
+    transform: rotateX(90deg) translateZ(25px);
+}
+
+.bottom1 {
+    transform: rotateX(-90deg) translateZ(25px);
+}
+
+.left1 {
+    transform: rotateY(-90deg) translateZ(25px);
+}
+
+.right1 {
+    transform: rotateY(90deg) translateZ(25px);
+}
+
+@keyframes rotateCube {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+#line{
+    line-height: 100px;
+    text-align: center;
+    color:white;
+    font-weight: 20px;
+    font-size: px;
+    text-decoration: bold;
+    
+}
+#line1{
+    line-height: 50px;
+    text-align: center;
+    color:white;
+    font-weight: 1px;
+    font-size: 18px;
+    text-decoration: bold;
+    
+}
+.aggr1{
+    background-color:#4E4E4E;
+    color:#D6D6D6;
+    
+    height: -10px;
+
+}
+#click{
+    cursor: pointer;
+}
+#atv{
+    height: 80px;
+}
+
+/* image animations */
+
+#mydiv {
+    animation: changeBg 30s infinite;
+    width: 100%;
+    height: 100px;
+
+}
+
+@keyframes changeBg {
+    0%, 100% {
+        background-image: url("image/Pakistan.png");
+    }
+    25% {
+        background-image: url("image/pakistan_images2.png");
+    }
+}
+@keyframes example {
+    100% {
+        background: url( "/static/images/Pakistan.png");
+        background-repeat: no-repeat;
+          
+    }
+    200% {
+    
+      background: url("/static/images/pakistan_images2.png" );
+      background-repeat: no-repeat;
+      
+    }
+}
+
+/* Apply the animation to an element */
+.pkan {
+    width: 100%;
+    height: 300px;
+    
+    background: url( "/static/images/pakistan_images2.png");
+    
+  
+    animation: example 30s linear infinite;
+}
+@keyframes example1 {
+    100% {
+        background: url( "/static/images/componentnew1.png");
+        background-repeat: no-repeat;
+          
+    }
+    200% {
+    
+      background-image: url("/static/images/indianas2.png" );
+      background-repeat: no-repeat;
+    
+
+      
+    }
+}
+
+.pkan1 {
+    width: 100%;
+    height: 300px;
+    
+    background: url("/static/images/indianas2.png");
+    background-repeat: no-repeat;
+  
+    animation: example1 30s linear infinite;
+}
+
+
+@keyframes example2 {
+    100% {
+        background: url( "/static/images/chinaimage.png");
+        background-repeat: no-repeat;
+          
+    }
+    200% {
+    
+      background-image: url("/static/images/chain2.png" );
+      background-repeat: no-repeat;
+    
+
+      
+    }
+}
+
+.pkan2 {
+    width: 100%;
+    height: 300px;
+    
+    background: url("/static/images/chain2.png");
+    background-repeat: no-repeat;
+  
+    animation: example2 30s linear infinite;
+}
+@keyframes example3 {
+    100% {
+        background: url( "/static/images/Australianews.png");
+        background-repeat: no-repeat;
+          
+    }
+    200% {
+    
+      background-image: url("/static/images/auslogo_news.png" );
+      background-repeat: no-repeat;
+    
+
+      
+    }
+}
+
+.pkan3 {
+    width: 100%;
+    height: 300px;
+    
+    background: url("/static/images/auslogo_news.png");
+    background-repeat: no-repeat;
+  
+    animation: example3 30s linear infinite;
+}
+@keyframes example4 {
+    100% {
+        background: url( "/static/images/newzealand.png");
+        background-repeat: no-repeat;
+          
+    }
+    200% {
+    
+      background-image: url("/static/images/nzimage.png" );
+      background-repeat: no-repeat;
+    
+
+      
+    }
+}
+
+.pkan4 {
+    width: 100%;
+    height: 300px;
+    
+    background: url("/static/images/nzimage.png");
+    background-repeat: no-repeat;
+  
+    animation: example4 30s linear infinite;
+}
+    
+    
+@keyframes example55 {
+    100% {
+        background: url( "/static/images/us2small.png");
+        background-repeat: no-repeat;
+          
+    }
+    200% {
+    
+      background-image: url("/static/ussmall.png" );
+      background-repeat: no-repeat;
+    
+
+      
+    }
+}
+
+.pkan55 {
+    width: 100%;
+    height: 300px;
+    
+    background: url("/static/images/ussamall.png");
+    background-repeat: no-repeat;
+  
+    animation: example55 30s linear infinite;
+}
+#body1{
+    height: 200px;
+}  
+    
